@@ -15,6 +15,7 @@
           ![img.png](img.png)
       
         * Empty Rectangle Pattern
+      
           ![img_1.png](img_1.png)
 
     * a TriangleStarPattern.java class in which triangle shapes are created using stars and printed on the terminal.
