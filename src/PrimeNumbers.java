@@ -7,7 +7,8 @@ public class PrimeNumbers {
         } else {
             System.out.println("This number is not a prime number. ");
         }
-        checkAllPrimeNumbers(getNumber());
+        checkAllPrimeNumbersUpTo(getNumber());
+        //checkAllPrimeNumbers(getNumber());
     }
 
     static int getNumber() {
@@ -25,7 +26,20 @@ public class PrimeNumbers {
         }
         return flag == 1;
     }
+    static void checkAllPrimeNumbersUpTo(int number) {
+        int counter = 0;
+        for (int i = 1; i <= number; i++) {
+            if (isPrimeNumber(i)) {
+                counter++;
+                System.out.println(i + " is a prime number.");
+            } else {
+                System.out.println(i + " is not a prime number.");
+            }
+        }
+        System.out.print("Total number of prime numbers up to the entered number :" + counter);
+    }
 
+   /*
     static void checkAllPrimeNumbers(int number) {
         int flag, counter = 0;
         for (int i = 2; i <= number; i++) {
@@ -44,5 +58,5 @@ public class PrimeNumbers {
         }
         System.out.print("Total number of prime numbers up to the entered number :" + counter);
     }
-
+    */
 }
